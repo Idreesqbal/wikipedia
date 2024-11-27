@@ -3,3 +3,4 @@ wikipedia/target/*
 wikipedia/.user.yml
 wikipedia/dbt_packages/*
 .env
+el/env
