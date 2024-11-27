@@ -1,13 +1,18 @@
+'''
+This config connects dbt to a PostgreSQL database using environment variables for credentials and settings.
+It targets the "dev" environment, runs in the "public" schema, and uses 4 threads with a 20-second connection timeout.
+
+''' 
 wikipedia:
   target: dev
   outputs:
     dev:
       type: postgres
       host: localhost
-      user: postgres
-      password: root
-      port: 5432
-      dbname: postgres # or database instead of dbname
+      user: "{{ env_var('DB_USER') }}"
+      password: "{{ env_var('POSTGRES_PASSWORD') }}" # Fetch password from environment variable
+      port: "{{ env_var('DB_PORT') | int }}"
+      dbname: "{{ env_var('DB_NAME') }}" # or database instead of dbname
       schema: public
       threads: 4
       connect_timeout: 20 # default 10 seconds
