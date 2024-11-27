@@ -40,4 +40,4 @@ FROM public.time_slots t
 LEFT JOIN public.stg_wikipedia_api w
 ON w.timestamp >= t.start_time AND w.timestamp < t.end_time
 GROUP BY t.start_time, t.end_time
-ORDER BY t.start_time
+ORDER BY t.start_time 
