@@ -17,6 +17,12 @@ vars:
   'pub': 'pub'
 models:
   wikipedia:
+      staging:
+        schema: stg
+      intermediate:
+        schema: int
+      final:
+        schema: pub
       materialized: view
       pub:
         materialized: table

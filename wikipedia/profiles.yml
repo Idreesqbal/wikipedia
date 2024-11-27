@@ -1,8 +1,7 @@
-'''
-This config connects dbt to a PostgreSQL database using environment variables for credentials and settings.
-It targets the "dev" environment, runs in the "public" schema, and uses 4 threads with a 20-second connection timeout.
 
-''' 
+# This config connects dbt to a PostgreSQL database using environment variables for credentials and settings.
+# It targets the "dev" environment, runs in the "public" schema, and uses 4 threads with a 20-second connection timeout
+
 wikipedia:
   target: dev
   outputs:
