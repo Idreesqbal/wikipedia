@@ -1,0 +1,13 @@
+wikipedia:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: root
+      port: 5432
+      dbname: postgres # or database instead of dbname
+      schema: public
+      threads: 4
+      connect_timeout: 20 # default 10 seconds

@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: int_interval_change
+    description: "Calculates the total changes in 30-minute intervals with 15-minute shifts"
+    columns:
+      - name: slot_start_time
+        description: "Start time of the 30-minute slot"
+      - name: slot_end_time
+        description: "End time of the 30-minute slot"
+      - name: total_changes
+        description: "Total number of changes within the slot"

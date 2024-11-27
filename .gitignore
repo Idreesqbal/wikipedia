@@ -1,0 +1,5 @@
+wikipedia/logs/*
+wikipedia/target/*
+wikipedia/.user.yml
+wikipedia/dbt_packages/*
+.env

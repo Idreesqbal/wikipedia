@@ -1,0 +1,22 @@
+name: 'wikipedia'
+version: '1.0.0'
+config-version: 2
+
+profile: 'wikipedia'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+vars:
+  'stg': 'stg'
+  'int': 'int'
+  'pub': 'pub'
+models:
+  wikipedia:
+      materialized: view
+      pub:
+        materialized: table

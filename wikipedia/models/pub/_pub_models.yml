@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: interval_change
+    description: "Calculates the total changes in 30-minute intervals with 15-minute shifts"
+    columns:
+      - name: slot_start_time
+        description: "{{ doc('slot_start_time') }}"
+      - name: slot_end_time
+        description: "{{ doc('slot_end_time') }}"
+      - name: total_changes
+        description: "{{ doc('total_change') }}"

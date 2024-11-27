@@ -1,0 +1,3 @@
+packages:
+  - package: dbt-labs/codegen # needed to automatically generate yaml
+    version: 0.10.0
