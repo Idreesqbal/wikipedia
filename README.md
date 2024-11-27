@@ -55,7 +55,7 @@ cd your-repo-name
 
 1. Install Python dependencies:
    ```bash
-   pip install dbt-postgres  # Or your respective dbt adapter (e.g., dbt-snowflake, dbt-postgres)
+   pip install dbt-postgres  # Or your respective dbt adapter (e.g., dbt-snowflake, dbt-bigquery)
    ```
 
 2. Install dbt packages:
@@ -71,7 +71,7 @@ cd your-repo-name
 This file contains the core configuration for your dbt project, such as the project name, model paths, and database configurations. Modify it as needed.
 
 ### `profiles.yml`
-Update the `profiles.yml` file to include your database credentials. Example for BigQuery:
+Update the `profiles.yml` file to include your database credentials. Example for postgreSQL:
 ```yaml
 default:
   target: dev
