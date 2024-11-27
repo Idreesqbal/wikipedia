@@ -55,7 +55,7 @@ cd your-repo-name
 
 1. Install Python dependencies:
    ```bash
-   pip install dbt-bigquery  # Or your respective dbt adapter (e.g., dbt-snowflake, dbt-postgres)
+   pip install dbt-postgres  # Or your respective dbt adapter (e.g., dbt-snowflake, dbt-postgres)
    ```
 
 2. Install dbt packages:
